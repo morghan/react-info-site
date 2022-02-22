@@ -1,13 +1,14 @@
 import React from 'react';
-import Main from './components/Main.js';
-import Navbar from './components/Navbar.js';
+import Main from './components/Main';
+import Navbar from './components/Navbar';
+import './style.css';
 
 function App() {
 	return (
-		<>
+		<div className='container'>
 			<Navbar />
 			<Main />
-		</>
+		</div>
 	);
 }
 export default App;
