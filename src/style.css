@@ -32,9 +32,12 @@ body {
 }
 
 .main {
-	margin-top: 57px;
-	margin-left: 30px;
+	padding: 57px 30px;
 	color: white;
+	/*To set background image in css instead of an <img />*/
+	background-image: url('./images/reactjs-icon 2.png');
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
 .mainHeader {
@@ -42,10 +45,23 @@ body {
 	font-weight: 700;
 	margin-bottom: 46px;
 	font-size: 39px;
+	letter-spacing: -0.05em;
 }
 
 .mainText > li {
 	font-weight: 400;
 	font-size: 16px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+	/*To wrap the text*/
+	max-width: 400px;
+}
+
+/*
+CSS pseudo-element that selects the marker box of 
+a list item
+*/
+
+.mainText > li::marker {
+	color: #61dafb;
+	font-size: 1.5rem;
 }
